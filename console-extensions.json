@@ -1,0 +1,35 @@
+[
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/example",
+      "component": { "$codeRef": "ExamplePage" }
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "example",
+      "name": "Plugin Example",
+      "href": "/example",
+      "perspective": "admin",
+      "section": "home"
+    }
+  },
+  {
+    "type": "console.tab/horizontalNav",
+    "properties": {
+      "page": {
+        "name": "Example Tab",
+        "href": "example"
+      },
+      "model": {
+        "group": "core",
+        "version": "v1",
+        "kind": "Pod"
+      },
+      "component": { "$codeRef": "ExampleTab" }
+    }
+  }
+]
