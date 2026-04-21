@@ -1,5 +1,14 @@
 [
   {
+    "type": "console.navigation/section",
+    "properties": {
+      "id": "pas-section",
+      "perspective": "admin",
+      "name": "PAS Menu",
+      "insertAfter": "home"
+    }
+  },
+  {
     "type": "console.page/route",
     "properties": {
       "exact": true,
@@ -11,10 +20,28 @@
     "type": "console.navigation/href",
     "properties": {
       "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin example%",
+      "name": "%plugin__pas-console-plugin~Plugin example%",
       "href": "/example",
       "perspective": "admin",
       "section": "home"
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/compliance",
+      "component": { "$codeRef": "CompliancePage" }
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "compliance",
+      "name": "%plugin__pas-console-plugin~Cluster Compliance%",
+      "href": "/compliance",
+      "perspective": "admin",
+      "section": "pas-section"
     }
   }
 ]

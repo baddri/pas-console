@@ -1,12 +1,12 @@
 {
-  "name": "console-plugin-template",
+  "name": "pas-console-plugin",
   "version": "0.0.1",
   "description": "Template project for OpenShift Console plugins",
   "private": true,
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/console-plugin-template.git"
+    "url": "https://github.com/baddri-pas-console.git"
   },
   "scripts": {
     "clean": "rm -rf dist",
@@ -29,7 +29,10 @@
     "@cypress/webpack-preprocessor": "^7.0.2",
     "@openshift-console/dynamic-plugin-sdk": "4.21-latest",
     "@openshift-console/dynamic-plugin-sdk-webpack": "4.21-latest",
-    "@patternfly/react-core": "^6.2.2",
+    "@patternfly/react-charts": "^8.4.1",
+    "@patternfly/react-component-groups": "^6.4.0",
+    "@patternfly/react-core": "6.4.1",
+    "@patternfly/react-drag-drop": "6.4.1",
     "@patternfly/react-icons": "^6.2.2",
     "@patternfly/react-table": "^6.2.2",
     "@types/node": "^22.0.0",
@@ -69,20 +72,22 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1",
+    "victory": "^37.3.6",
     "webpack": "^5.100.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.3"
   },
   "consolePlugin": {
-    "name": "console-plugin-template",
+    "name": "pas-console-plugin",
     "version": "0.0.1",
     "displayName": "OpenShift Console Plugin Template",
     "description": "Template project for OpenShift Console plugins. Edit package.json to change this message and the plugin name.",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "ExamplePage": "./pages/ExamplePage",
+      "CompliancePage": "./pages/CompliancePage"
     },
     "dependencies": {
-      "@console/pluginAPI": "^4.21.0"
+      "@console/pluginAPI": "^4.15.0"
     }
   },
   "packageManager": "yarn@4.13.0"
