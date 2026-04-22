@@ -13,3 +13,5 @@ install-state.gz
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+*.tgz
