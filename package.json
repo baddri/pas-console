@@ -80,8 +80,8 @@
   "consolePlugin": {
     "name": "pas-console-plugin",
     "version": "0.0.1",
-    "displayName": "OpenShift Console Plugin Template",
-    "description": "Template project for OpenShift Console plugins. Edit package.json to change this message and the plugin name.",
+    "displayName": "PAS Console Plugin pages",
+    "description": "Console plugin for pas team",
     "exposedModules": {
       "CompliancePage": "./pages/CompliancePage"
     },
