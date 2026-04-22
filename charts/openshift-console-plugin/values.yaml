@@ -1,8 +1,8 @@
 ---
 plugin:
-  name: ""
-  description: ""
-  image: ""
+  name: "pas-console-plugin"
+  description: "Console Plugin for PAS"
+  image: "new-nexus.bri.co.id/pas/pas-console-plugin:4.19.1"
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   replicas: 2
